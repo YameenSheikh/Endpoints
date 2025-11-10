@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Non-Production Environments Definition Details</title>
+  <title>Environments Definition Details</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -189,7 +189,7 @@
                     </h1>
                     
                     <p>
-                        A centralized, interactive endpoint directory for Staging, Hotfix, QA, Sprint, and Development Environments Endpoints. 
+                        A centralized, interactive endpoint directory for Production, Staging, Hotfix, QA, Sprint, and Development Environments Endpoints. 
                         Expand sections to view per-Environment and per-team endpoints and quickly navigate to services.
                     </p>
                 </div>
@@ -202,7 +202,167 @@
     </section>
 
       <div class="space-y-4">
-        
+
+        <!-- Production Accordion -->
+        <div class="flex justify-center mt-10">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-7xl" data-aos="fade-up" data-aos-delay="200">
+          <button class="accordion-header w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition">
+            <div class="flex items-center">
+              <i data-feather="code" class="w-5 h-5 text-green-500 mr-3"></i>
+              <span class="text-xl font-semibold text-gray-800">PRODUCTION</span>
+            </div>
+            <i data-feather="chevron-down" class="w-5 h-5 text-gray-500 transform transition-transform duration-200"></i>
+            </button>
+
+        <!-- Main Production Content -->
+        <div class="accordion-content max-h-0">
+          <div class="px-6 pb-6 space-y-3">
+
+            <!-- IAD Datacenter -->
+            <div class="border rounded-lg">
+              <button class="team-header w-full flex justify-between items-center p-4 text-left bg-gray-100 hover:bg-green-100 rounded-t">
+                <div class="flex items-center">
+                  <i data-feather="file-text" class="w-5 h-5 text-blue-500 mr-3"></i>
+                  <span class="text-gray-800 font-medium">IAD Datacenter</span>
+                  <a href="https://www.bqecore.com/webapp/" class="ml-3 text-blue-600 underline" target="_blank" rel="noopener noreferrer">(https://www.bqecore.com/webapp/)</a>
+                </div>
+                <i data-feather="chevron-down" class="w-4 h-4 text-gray-500 transition-transform"></i>
+              </button>
+              
+                <div class="team-content max-h-0 px-4 pb-4 space-y-2">
+                <div class="endpoint-link p-3 bg-gray-50 rounded-lg hover:bg-green-50">
+                  <!-- IAD Endpoints -->
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">BQECOREHostAPI</span></div>
+                  <a href="https://bc-iad01-web01-hostapilb.bqecore.com/hostapi" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://bc-iad01-web01-hostapilb.bqecore.com/hostapi</a>
+
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">BQECOREAPI</span></div>
+                  <a href="https://coreapi1-01.bqecore.com/coreapi" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://coreapi1-01.bqecore.com/coreapi</a>
+
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">BQECOREWebApp</span></div>
+                  <a href="https://wap1-01.bqecore.com/webapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://wap1-01.bqecore.com/webapp</a>
+
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">BQECoreReportApp</span></div>
+                  <a href="https://rpt1-01.bqecore.com/reportapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://rpt1-01.bqecore.com/reportapp</a>
+                  <a href="https://rpt1-02.bqecore.com/reportapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 ml-6 inline-block">https://rpt1-02.bqecore.com/reportapp</a>
+                  <a href="https://rpt1-03.bqecore.com/reportapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 ml-6 inline-block">https://rpt1-03.bqecore.com/reportapp</a>
+                  <a href="https://rpt1-04.bqecore.com/reportapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://rpt1-04.bqecore.com/reportapp</a>
+                  <a href="https://rpt1-05.bqecore.com/reportapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://rpt1-05.bqecore.com/reportapp</a>
+                  <a href="https://rpt1-06.bqecore.com/reportapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://rpt1-06.bqecore.com/reportapp</a>
+                  <a href="https://rpt1-07.bqecore.com/reportapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://rpt1-07.bqecore.com/reportapp</a>
+                  <a href="https://rpt1-08.bqecore.com/reportapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://rpt1-08.bqecore.com/reportapp</a>
+                  <a href="https://rpt1-09.bqecore.com/reportapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://rpt1-09.bqecore.com/reportapp</a>
+                  <a href="https://rpt1-10.bqecore.com/reportapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://rpt1-10.bqecore.com/reportapp</a>
+                  <a href="https://rpt1-11.bqecore.com/reportapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://rpt1-11.bqecore.com/reportapp</a>
+                  <a href="https://rpt1-13.bqecore.com/reportapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://rpt1-13.bqecore.com/reportapp</a>
+
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">BQECoreAgentAPI</span></div>
+                  <a href="http://rss1-01.bqecore.com/coreagentapi/" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 ml-6 inline-block">http://rss1-01.bqecore.com/coreagentapi/</a>
+                  <a href="http://rss1-02.bqecore.com/coreagentapi/" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">http://rss1-02.bqecore.com/coreagentapi/</a>
+                  <a href="http://rss1-03.bqecore.com/coreagentapi/" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">http://rss1-03.bqecore.com/coreagentapi/</a>
+                  <a href="http://rss1-04.bqecore.com/coreagentapi/" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">http://rss1-04.bqecore.com/coreagentapi/</a>
+                  <a href="http://rss1-05.bqecore.com/coreagentapi/" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">http://rss1-05.bqecore.com/coreagentapi/</a>
+                  <a href="http://rss1-06.bqecore.com/coreagentapi/" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">http://rss1-06.bqecore.com/coreagentapi/</a>
+                  <a href="http://rss1-07.bqecore.com/coreagentapi/" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">http://rss1-07.bqecore.com/coreagentapi/</a>
+                
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">BQECOREADMINPORTAL</span></div>
+                  <a href="https://admin.bqecore.com" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://admin.bqecore.com</a>
+
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">BQEPUBLICAPI</span></div>
+                  <a href="https://api.bqecore.com/api/version" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 ml-6 inline-block">https://api.bqecore.com/api/version</a>
+                
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">BQEDeveloperPortal</span></div>
+                  <a href="https://api-developer.bqecore.com/webapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://api-developer.bqecore.com/webapp</a>
+
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">BQEIdentity</span></div>
+                  <a href="https://api-identity.bqecore.com/idp/.well-known/openid-configuration" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://api-identity.bqecore.com/idp/.well-known/openid-configuration</a>
+
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">ExplorerDist</span></div>
+                  <a href="api-explorer.bqecore.com" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">api-explorer.bqecore.com</a>
+                
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">CoreOutlookAddin</span></div>
+                  <a href="https://outlookaddin.bqecore.com/messageread.html" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://outlookaddin.bqecore.com/messageread.html</a>
+                
+
+                </div>
+              </div>
+            </div>
+
+            <!-- SYD Datacenter -->
+            <div class="border rounded-lg">
+              <button class="team-header w-full flex justify-between items-center p-4 text-left bg-gray-100 hover:bg-green-100 rounded-t">
+                <div class="flex items-center">
+                  <i data-feather="file-text" class="w-5 h-5 text-blue-500 mr-3"></i>
+                  <span class="text-gray-800 font-medium">SYD Datacenter</span>
+                  <a href="https://www.bqecore.com.au/webapp/" class="ml-3 text-blue-600 underline" target="_blank" rel="noopener noreferrer">(https://www.bqecore.com.au/webapp/)</a>
+                </div>
+                <i data-feather="chevron-down" class="w-4 h-4 text-gray-500 transition-transform"></i>
+              </button>
+
+              <div class="team-content max-h-0 px-4 pb-4 space-y-2">
+                <div class="endpoint-link p-3 bg-gray-50 rounded-lg hover:bg-green-50">
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">BQECOREHostAPI</span></div>
+                  <a href="https://bc-syd01-web01-hostapilb.bqecore.com.au/hostapi" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://bc-syd01-web01-hostapilb.bqecore.com.au/hostapi</a>
+
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">BQECOREAPI</span></div>
+                  <a href="https://coreapi170.bqecore.com.au/coreapi" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 ml-6 inline-block">https://coreapi170.bqecore.com.au/coreapi</a>
+
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">BQECOREWebApp</span></div>
+                  <a href="https://wap170.bqecore.com.au/webapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 ml-6 inline-block">https://wap170.bqecore.com.au/webapp</a>
+                
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">BQECOREReportApp</span></div>
+                  <a href="https://rpt-01.bqecore.com.au/reportapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://rpt-01.bqecore.com.au/reportapp</a>
+                  <a href="https://rpt61-02.bqecore.com.au/reportapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://rpt61-02.bqecore.com.au/reportapp</a>
+                  <a href="https://rpt61-03.bqecore.com.au/reportapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://rpt61-03.bqecore.com.au/reportapp</a>
+                  
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">BQECOREAgentAPI</span></div>
+                  <a href="https://rss-01.bqecore.com.au/coreagentapi/" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://rss-01.bqecore.com.au/coreagentapi/</a>
+                  <a href="https://rss61-02.bqecore.com.au/coreagentapi/" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://rss61-02.bqecore.com.au/coreagentapi/</a>
+                  <a href="https://rss61-03.bqecore.com.au/coreagentapi/" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 mt-1 ml-6 inline-block">https://rss61-03.bqecore.com.au/coreagentapi/</a>
+                  
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">BQEPUBLICAPI</span></div>
+                  <a href="https://syd-api.bqecore.com.au/api/version" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 ml-6 inline-block">https://syd-api.bqecore.com.au/api/version</a>
+                
+
+                </div>
+              </div>
+            </div>
+
+            <!-- YQB -->
+            <div class="border rounded-lg">
+              <button class="team-header w-full flex justify-between items-center p-4 text-left bg-gray-100 hover:bg-green-100 rounded-t">
+                <div class="flex items-center">
+                  <i data-feather="file-text" class="w-5 h-5 text-blue-500 mr-3"></i>
+                  <span class="text-gray-800 font-medium">YQB Datacenter</span>
+                  <a href="https://www.bqecore.com.ca/webapp/" class="ml-3 text-blue-600 underline" target="_blank" rel="noopener noreferrer">(https://www.bqecore.com.ca/webapp/)</a>
+                </div>
+                <i data-feather="chevron-down" class="w-4 h-4 text-gray-500 transition-transform"></i>
+              </button>
+
+              <div class="team-content max-h-0 px-4 pb-4 space-y-2">
+                <div class="endpoint-link p-3 bg-gray-50 rounded-lg hover:bg-green-50">
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">BQECOREAPI</span></div>
+                  <a href="https://coreapi1-20.bqecore.com/coreapi" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 ml-6 inline-block">https://coreapi1-20.bqecore.com/coreapi</a>
+
+                  <div class="flex items-center"><i data-feather="link" class="w-4 h-4 text-green-500 mr-2"></i><span class="font-medium text-gray-700">BQECOREWebApp</span></div>
+                  <a href="https://wap1-20.bqecore.com/webapp" target="_blank" class="text-sm text-blue-500 hover:text-blue-700 ml-6 inline-block">https://wap1-20.bqecore.com/webapp</a>
+
+                
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+        </div>
+        </div>
+
+
+
+
+
         <!-- Staging Environment -->
        
         <div class="flex justify-center mt-10">
@@ -606,7 +766,7 @@
 
         <!-- Development Accordion -->
          <div class="flex justify-center mt-10">
-        <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-7xl" data-aos="fade-up">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-7xl" data-aos="fade-up" data-aos-delay="20">
           <button class="accordion-header w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition">
             <div class="flex items-center">
               <i data-feather="code" class="w-5 h-5 text-green-500 mr-3"></i>
